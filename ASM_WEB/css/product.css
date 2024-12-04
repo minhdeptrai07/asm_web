@@ -1,0 +1,132 @@
+/* Reset một số thuộc tính cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Định dạng body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Định dạng header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Định dạng navbar */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Định dạng phần main */
+main {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng tên sản phẩm */
+main h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Định dạng hình ảnh sản phẩm */
+main img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Định dạng các thông tin về sản phẩm */
+main p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* Định dạng nút thêm vào giỏ */
+button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e53e2f;
+}
+
+/* Định dạng footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Định dạng cho responsive */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    main img {
+        max-height: 300px;
+    }
+
+    main h2 {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+}
